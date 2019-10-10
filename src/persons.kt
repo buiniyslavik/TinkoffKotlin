@@ -5,8 +5,8 @@ data class Person(
     val zipCode: String?,
     val phoneNumber: String?
 ) {
-    companion object {
-        fun compare(a: Person, b: Person): Int {
+    companion object : Comparator<Person> {
+        override fun compare(a: Person, b: Person): Int {
             val deltaFirstName = a.lastName.compareTo(b.lastName)
             if (deltaFirstName != 0) return deltaFirstName
             else {
