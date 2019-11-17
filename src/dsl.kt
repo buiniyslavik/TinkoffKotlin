@@ -29,6 +29,9 @@ fun main() {
         it name "vasya"
         it surname "pupkin"
         it birthDate "01.01.1980"
-        it addresses listOf("addr1", "addr2")
+        it addresses listOf(
+            "addr1",
+            "addr2"
+        )
     }
 }
